@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackHarddiskPlugin = require('html-webpack-harddisk-plugin');
 
 module.exports = {
     mode: 'development',
@@ -21,11 +22,27 @@ module.exports = {
       },
     ],
   },
+
+  devtool: 'inline-source-map',
+  devServer: {
+    open: 'true',
+    hot:true,
+    static:'./dist',
+    
+  },
+
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Restaurant Page',
-      template: './src/template.html'
+      filename: 'index.html',
+      template: './src/template.html',
+      alwaysWriteToDisk: true,
     }),
+    new HtmlWebpackHarddiskPlugin()
 
   ],
+
+  /* optimization: {
+    runtimeChunk: 'single',
+  }, */
 };

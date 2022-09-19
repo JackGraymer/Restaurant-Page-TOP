@@ -1,4 +1,15 @@
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(57, 15, 97);
+}
 #content{
-    color: green;
+    color: rgb(20, 76, 230);
     background-color: black;
+    font-size: large;
 }
