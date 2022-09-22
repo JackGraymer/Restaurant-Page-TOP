@@ -1,4 +1,4 @@
 import './style.css'
-import printMe from './welcome';
+import printMe from './home';
 
 printMe();
