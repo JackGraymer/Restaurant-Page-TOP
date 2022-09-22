@@ -1,4 +1,6 @@
 import './style.css'
-import printMe from './home';
+import {printMe, iconChange} from './home';
+
 
 printMe();
+iconChange()
