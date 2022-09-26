@@ -1,5 +1,5 @@
 import './style.css'
-import printMe from './home';
+import {printMe, home} from './home';
 import icon from './img/restaurant.png'
 import git from './img/github.png'
 
@@ -13,6 +13,10 @@ iconChange()
 function footerLink(){
     document.querySelector('.git').src = git;
 }
+
+export default function clearContent(){
+    content.textContent = ''
+  }
 
 footerLink()
 
@@ -29,7 +33,7 @@ menu.forEach(element => {
         element.style.backgroundColor= 'blue';
         //write tab function
         if(element.textContent === "Home"){
-            //Home function
+            home()
             console.log(element.textContent)
         } else if(element.textContent === "Menu"){
             //Menu function
