@@ -3,6 +3,7 @@ import {printMe, home} from './home';
 import icon from './img/japanico.jpg'
 import git from './img/github.png'
 import menuContent from './menu'
+import contact from './contact'
 
 function iconChange() {
   let link = document.querySelector("link[rel~='icon']")
@@ -41,7 +42,7 @@ menu.forEach(element => {
             menuContent()
             console.log(element.textContent)
         }else{
-            //Contact Function
+            contact()
             console.log(element.textContent)
         }
     })
