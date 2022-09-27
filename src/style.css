@@ -31,7 +31,8 @@ body{
     height: 5em;
     width: 5em;
     margin: 0 20px;
-    background-image: url(./img/ramen.png);
+    background-image: url(./img/japanico.jpg);
+    border-radius: 50%;
     background-size:cover;
 }
 
@@ -67,8 +68,7 @@ body{
 
 .block{/*Replaceable for 'welcome' on home tab*/
     display: grid;
-    text-align:center;
-    grid-auto-columns: auto;
+    ssgrid-auto-columns: auto;
     color: black;
     box-sizing: border-box;
     padding: 1em;
@@ -76,19 +76,57 @@ body{
     height: clamp(1em, auto, 100%);
     border-radius: 2em;
     background-color: rgb(156, 156, 44);
+    margin-bottom: 1em;
 }
-.block>h2{
+
+.welcome{/*Replaceable for 'welcome' on home tab*/
+    display: grid;
+    text-align:center;
+    box-sizing: border-box;
+    padding: 1em;
+    width: 100%;
+    height: clamp(1em, auto, 100%);
+    border-radius: 2em;
+    background-color: rgb(156, 156, 44);
+}
+.welcome>h2{
     justify-self: center;
 }
 .block>img{
     justify-self: center;
-    padding: 1em 1em;
+    spadding: 1em 1em;
     width: 80%;
-    border-radius: 1em;
+    border-radius: 2em;
 }
 
-
-
+.menu{
+    display: grid;
+    grid-template-areas: 
+    'name price img'
+    'description description img';
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 4fr;
+}
+.menu>h2{
+    grid-area: name;
+    align-self: center;
+    margin: 0;
+}
+.menu>h3{
+    text-align: center;
+    grid-area: price;
+    align-self: center;
+    margin: 0;
+}
+.menu>p{
+    grid-area: description;
+    align-self: center;
+}
+.menu>img{
+    padding: 0;
+    grid-area: img;
+    align-self: center;
+}
 
 
 

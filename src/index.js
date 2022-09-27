@@ -1,7 +1,8 @@
 import './style.css'
 import {printMe, home} from './home';
-import icon from './img/restaurant.png'
+import icon from './img/japanico.jpg'
 import git from './img/github.png'
+import menuContent from './menu'
 
 function iconChange() {
   let link = document.querySelector("link[rel~='icon']")
@@ -16,12 +17,13 @@ function footerLink(){
 
 export default function clearContent(){
     content.textContent = ''
-  }
+}
 
 footerLink()
 
 printMe();
 
+home()
 let menu = document.querySelectorAll('.button')
 
 //Tab functionality ** each tab clears the content and creates its own
@@ -36,7 +38,7 @@ menu.forEach(element => {
             home()
             console.log(element.textContent)
         } else if(element.textContent === "Menu"){
-            //Menu function
+            menuContent()
             console.log(element.textContent)
         }else{
             //Contact Function
