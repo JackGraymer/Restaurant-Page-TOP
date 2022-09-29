@@ -1,5 +1,5 @@
 import './style.css'
-import {printMe, home} from './home';
+import  home from './home';
 import icon from './img/japanico.jpg'
 import git from './img/github.png'
 import menuContent from './menu'
@@ -22,8 +22,6 @@ export default function clearContent(){
 
 footerLink()
 
-printMe();
-
 home()
 let menu = document.querySelectorAll('.button')
 
@@ -41,13 +39,13 @@ menu.forEach(element => {
         //write tab function
         if(element.textContent === "Home"){
             home()
-            console.log(element.textContent)
         } else if(element.textContent === "Menu"){
             menuContent()
-            console.log(element.textContent)
         }else{
             contact()
-            console.log(element.textContent)
         }
     })
 });
+
+let buttons = document.querySelectorAll('.button')
+buttons[0].click();

@@ -38,12 +38,7 @@ export default function menu(){
         price.textContent = element.price
         img.src = element.img
     })
-
-    
-
 }
-
-
 
 function meals(){
 
@@ -59,7 +54,6 @@ function meals(){
     let ramen = new plate('Tonkotsu Ramen', '16,90')
     ramen.description = 'Tonkotsu is a unique style of ramen consisting of an extremely rich, fatty pork broth, fresh noodles, soft-yolk eggs, and tender pork belly that melts in the mouth. It is so popular and special that it could be a dish of its own, not just a ramen style. The rich broth is developed by cooking the pork bones for a very long time, until the collagen and fat dissolve, resulting in a unique, creamy texture of the dish.';
     ramen.img = ramenimg
-    console.log(ramen)
 
     let gyoza = new plate('Gyoza (4pcs)', '6,90')
     gyoza.description = 'Gyoza are small Japanese dumplings which have been filled with ingredients like minced pork and vegetables, boyled in rich vegetable broth.'

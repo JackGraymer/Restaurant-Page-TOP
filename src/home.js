@@ -8,15 +8,10 @@ function iconChange() {
   link.href = icon
 }
 
-
-export function printMe() {
-  console.log(`I get called from home.js`)
-}
-
 let content = document.querySelector('#content')
 
 
-export function home(){
+export default function home(){
   clear();
 
   const block = document.createElement('div')
