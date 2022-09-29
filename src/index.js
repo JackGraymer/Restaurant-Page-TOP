@@ -31,9 +31,13 @@ let menu = document.querySelectorAll('.button')
 menu.forEach(element => {
     element.addEventListener('click', () => {
         menu.forEach(element => {
-            element.style.backgroundColor= 'red';
+            element.style.backgroundColor= 'aliceblue';
+            element.style.borderColor=''
+            element.style.color=''
         });    
-        element.style.backgroundColor= 'blue';
+        element.style.backgroundColor= 'rgb(36, 36, 36)';
+        element.style.color='rgb(255, 0, 115)'
+        element.style.borderColor='rgb(255, 0, 115)'
         //write tab function
         if(element.textContent === "Home"){
             home()
